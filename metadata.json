@@ -1,0 +1,7 @@
+{
+  "name": "TikTok Live-style Dance Streaming App",
+  "description": "A dance live streaming application inspired by TikTok Live. It allows creators to broadcast their dance sessions, view real-time analytics on viewer engagement, and receive tips. Viewers can watch streams, send comments, and support their favorite dancers with virtual gifts.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
