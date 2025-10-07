@@ -110,9 +110,9 @@ function App() {
 
   return (
     <div className="bg-black text-white font-sans overflow-hidden antialiased flex justify-center items-center h-screen">
-      {/* PC: フルスクリーン、タブレット以上: iPhone枠 */}
-      <div className="relative mx-auto w-full h-full lg:max-w-[390px] lg:max-h-[844px] lg:border-4 lg:border-gray-800 lg:rounded-[40px] lg:shadow-2xl">
-         <div className="absolute top-0 left-0 w-full h-full overflow-hidden lg:rounded-[36px]">
+      {/* モバイル: iPhone枠、PC: フルスクリーン */}
+      <div className="relative mx-auto w-full h-full sm:max-w-[390px] sm:max-h-[844px] sm:border-4 sm:border-gray-800 sm:rounded-[40px] sm:shadow-2xl">
+         <div className="absolute top-0 left-0 w-full h-full overflow-hidden sm:rounded-[36px]">
             <AnimatePresence mode="wait">{renderContent()}</AnimatePresence>
          </div>
       </div>
