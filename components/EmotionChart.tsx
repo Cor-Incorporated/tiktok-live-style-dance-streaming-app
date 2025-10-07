@@ -2,13 +2,9 @@
 import { ArcElement, Chart as ChartJS, Legend, Title, Tooltip } from 'chart.js';
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import type { EmotionData } from '../types';
+import type { EmotionChartProps } from '../types';
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
-
-interface EmotionChartProps {
-  data: EmotionData;
-}
 
 const EmotionChart: React.FC<EmotionChartProps> = ({ data }) => {
   const chartData = {

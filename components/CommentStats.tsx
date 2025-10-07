@@ -1,10 +1,6 @@
 
 import React from 'react';
-import type { CommentStats as CommentStatsType } from '../types';
-
-interface CommentStatsProps {
-  stats: CommentStatsType;
-}
+import type { CommentStatsProps } from '../types';
 
 const CommentStats: React.FC<CommentStatsProps> = ({ stats }) => {
   return (

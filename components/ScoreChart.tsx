@@ -12,7 +12,7 @@ import {
 } from 'chart.js';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import type { ScorePoint } from '../types';
+import type { ScoreChartProps } from '../types';
 
 ChartJS.register(
   CategoryScale,
@@ -24,10 +24,6 @@ ChartJS.register(
   Legend,
   Filler
 );
-
-interface ScoreChartProps {
-  data: ScorePoint[];
-}
 
 const ScoreChart: React.FC<ScoreChartProps> = ({ data }) => {
   const chartData = {

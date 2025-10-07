@@ -10,13 +10,9 @@ import {
 } from 'chart.js';
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import type { DonationPoint } from '../types';
+import type { DonationChartProps } from '../types';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
-
-interface DonationChartProps {
-  data: DonationPoint[];
-}
 
 const DonationChart: React.FC<DonationChartProps> = ({ data }) => {
   const chartData = {

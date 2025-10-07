@@ -4,16 +4,10 @@ import React, { useCallback, useState } from 'react';
 import { extraFeedback } from '../data/mockFeedback';
 import { mockStreams } from '../data/mockStreams';
 import { useMockComments } from '../hooks/useMockComments';
-import type { Comment } from '../types';
+import type { Comment, ViewerModeProps } from '../types';
 import CommentPopup from './CommentPopup';
 import DonationModal from './DonationModal';
 import WebcamView from './WebcamView';
-
-interface ViewerModeProps {
-  streamId: string;
-  onExit: () => void;
-  onNextStream?: (streamId: string) => void;
-}
 
 const ViewerMode: React.FC<ViewerModeProps> = ({ streamId, onExit, onNextStream }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -1,16 +1,12 @@
 import React from 'react';
 import { useStreamData } from '../hooks/useStreamData';
+import type { StreamerModeProps } from '../types';
 import ActionAdvice from './ActionAdvice';
 import CommentStats from './CommentStats';
 import DonationChart from './DonationChart';
 import EmotionChart from './EmotionChart';
 import ScoreChart from './ScoreChart';
 import WebcamView from './WebcamView';
-
-interface StreamerModeProps {
-  onStop: () => void;
-  onGoToMyPage: () => void;
-}
 
 const StreamerMode: React.FC<StreamerModeProps> = ({ onStop, onGoToMyPage }) => {
     const { scoreData, emotionData, donationData, commentStats, currentAdvice, totalDonations } = useStreamData(true);

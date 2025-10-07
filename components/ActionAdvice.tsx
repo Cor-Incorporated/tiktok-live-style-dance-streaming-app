@@ -1,11 +1,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
-import type { Advice } from '../types';
-
-interface ActionAdviceProps {
-  advice: Advice;
-}
+import type { ActionAdviceProps } from '../types';
 
 const ActionAdvice: React.FC<ActionAdviceProps> = ({ advice }) => {
   return (
