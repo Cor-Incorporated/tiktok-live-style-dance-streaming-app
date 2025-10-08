@@ -47,9 +47,13 @@ export interface Comment {
 }
 
 // AI Advice Types
+export type AdviceLevel = 'normal' | 'warning' | 'danger';
+
 export interface Advice {
   evaluation: string;
   action: string;
+  level?: AdviceLevel;
+  managerNote?: string; // マネージャーとしての追加指示
 }
 
 // Component Props Types
